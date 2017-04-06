@@ -1,5 +1,6 @@
 phackR <- function( cond2, cond1, alternative="greater" ){
 
+	N <- length(cond2)
 	par(mfrow=c(2,2))
 	ttest <- t.test( cond2, cond1, paired=T )
 	matplot( rbind(cond1,cond2), type="o", pch=1, col="black",  lty=1, xlim=c(0,3), xaxt="n", ylab="y", main="Data (all subjects)" ); axis(1, at=c(1,2), labels=c("cond1", "cond2") )
