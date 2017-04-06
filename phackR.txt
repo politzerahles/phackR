@@ -48,6 +48,6 @@ phackR <- function( cond2, cond1, alternative="greater" ){
 	cat( "\n\n" )
 	cat( paste0( "A potential explanation for the result is:\n", sample(reasons,1), " You should look into it.\n" ) )
 	cat( "\t(or, better yet, read http://www.nature.com/neuro/journal/v10/n1/full/nn0107-3.html)\n" )
-	
+	winDialog( type="ok", "April Fools!" )
 }
 
